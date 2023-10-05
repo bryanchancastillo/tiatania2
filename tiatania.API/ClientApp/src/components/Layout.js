@@ -1,17 +1,28 @@
-import React, { Component } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Footer } from './Footer';
 import { Header } from './Header';
 
-export class Layout extends Component {
-  static displayName = Layout.name;
+export function Layout(props) {
 
-  render() {
+    const location = useLocation();
+
+    let title = "";
+
+    if (location.pathname === '/about') {
+        title = "sobre nosotros";
+    } else if (location.pathname === '/menu') {
+        title = "Menu";
+    } else if (location.pathname === '/gallery') {
+        title = "Galeria";
+    } else if (location.pathname === '/prices') {
+        title = "precios";
+    }
+
     return (
-      <div>
-            <Header />
-            {this.props.children}
+        <div>
+            <Header title={title} />
+            {props.children}
             <Footer />
-      </div>
+        </div>
     );
-  }
 }

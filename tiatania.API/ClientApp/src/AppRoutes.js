@@ -4,6 +4,7 @@ import { Home } from "./components/Home";
 import { About } from "./pages/About";
 import { Gallery } from "./pages/Gallery";
 import { Prices } from "./pages/Prices";
+import { Menu } from "./pages/Menu";
 
 const AppRoutes = [
   {
@@ -29,7 +30,11 @@ const AppRoutes = [
   {
     path: '/gallery',
     element: <Gallery />
-  }
+  },
+  {
+    path: '/menu',
+    element: <Menu />
+  },
 
 ];
 

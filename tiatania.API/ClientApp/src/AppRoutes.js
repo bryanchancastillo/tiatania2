@@ -1,6 +1,6 @@
 import { Counter } from "./components/Counter";
 import { FetchData } from "./components/FetchData";
-import { Home } from "./components/Home";
+import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Gallery } from "./pages/Gallery";
 import { Prices } from "./pages/Prices";
@@ -20,6 +20,10 @@ const AppRoutes = [
     element: <FetchData />
   },
   {
+    path: '/',
+    element: <Home />
+  },
+  {
     path: '/about',
     element: <About />
   },
@@ -35,6 +39,7 @@ const AppRoutes = [
     path: '/menu',
     element: <Menu />
   },
+
 
 ];
 

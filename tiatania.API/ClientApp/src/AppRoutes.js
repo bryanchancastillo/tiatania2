@@ -5,6 +5,7 @@ import { About } from "./pages/About";
 import { Gallery } from "./pages/Gallery";
 import { Prices } from "./pages/Prices";
 import { Menu } from "./pages/Menu";
+import { PageNotFound } from "./pages/PageNotFound";
 
 const AppRoutes = [
   {
@@ -38,6 +39,10 @@ const AppRoutes = [
   {
     path: '/menu',
     element: <Menu />
+  },
+  {
+    path: '*',
+    element: <PageNotFound />
   },
 
 

@@ -6,7 +6,8 @@ import bienestar from "../menu/bienestar"
 import tobaccos from "../menu/tobaccos"
 import drinks from "../menu/drinks"
 import wines from "../menu/wines"
-import picaderas from "../menu/picaderas"
+import picaderas from "../menu/picaderas";
+import { Tooltip } from 'reactstrap';
 
 export function Menu() {
 
@@ -14,6 +15,10 @@ export function Menu() {
     const [totalPrice, setTotalPrice] = useState(0);
     const [showTotalPrice, setShowTotalPrice] = useState(false);
     const [drinkQuantities, setDrinkQuantities] = useState({});
+
+    const [tooltipOpen, setTooltipOpen] = useState(false);
+
+    const toggle = () => setTooltipOpen(!tooltipOpen);
 
     const toggleDrinkSelection = (beer) => {
         // Function to toggle the selection of a beer
@@ -414,12 +419,20 @@ export function Menu() {
             </section>
 
             {showTotalPrice && (
-                <div className="totalprice d-flex justify-content-center fixed-bottom bg-primary p-3">
+
+                <div className="totalprice d-flex justify-content-center fixed-bottom bg-primary p-3" type="button" id='tooltip' href="#">
 
                     <div>{`TOTAL RD$${totalPrice.toFixed(2)}`}</div>
+
+                    <Tooltip placement="top" isOpen={tooltipOpen} target="tooltip" toggle={toggle} autohide={true}>
+                        Recuerda marcar al 0 para comunicarse con la oficiona.
+                    </Tooltip>
+
                 </div>
+
             )}
 
+       
 
         </>
 

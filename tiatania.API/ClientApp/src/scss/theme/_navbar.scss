@@ -18,11 +18,16 @@
 	content: '';
 	position: absolute;
 	top: 0; right: 0; bottom: 0; left: 0;
-	background-color: $white;
+	background-color: rgba(214, 51, 132, 0.9);
 	transform: translateY(-100%);
 	transition: all .3s;
 	z-index: -1;
 }
+
+// Dark
+
+
+
 
 // Light
 
@@ -37,8 +42,8 @@
 // Brand
 
 .navbar-brand {
-	font-family: $headings-font-family;
-	font-style: italic;
+	font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
+	//font-style: italic;
 	transition: color .1s;
 }
 

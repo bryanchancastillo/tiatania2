@@ -6,6 +6,10 @@ import { NavBar } from "../components/NavBar";
 
 export function Home() {
 
+    const h1Styles = {
+        fontFamily: 'FreeHand591BT, sans-serif',
+    };
+
     useEffect(() => {
 
         jarallax(document.querySelectorAll('.bg-cover'), {
@@ -27,14 +31,10 @@ export function Home() {
                                 <h6 className="text-xs text-white-75 mb-4">
                                     <span className="text-primary">Motel</span> / ocio
                                 </h6>
-                                <div className="mb-4">
-                                    <img src="/assets/img/tiatanialogo.png" className="mx-auto" alt="Tia Tania Logo" />
-                                </div>
-                                <div>
-                                    <Link className="btn btn-outline-primary text-white text-primary-hover" to="/menu">
-                                        Menu
-                                    </Link>
-                                </div>
+                                <h1 className="display-1 text-white mb-4" style={h1Styles}>
+                                    Tia Tania
+                                </h1>
+                                <Link className="btn btn-outline-primary text-white text-primary-hover mb-7 mb-md-0" to="/menu"> menu</Link>
                             </div>
                         </div>
                     </div>

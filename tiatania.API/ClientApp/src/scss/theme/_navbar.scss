@@ -42,10 +42,11 @@
 // Brand
 
 .navbar-brand {
-	font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
-	//font-style: italic;
+	font-family: $freeHand, sans-serif;
+	font-weight: bold; /* Agrega esta línea para hacer el texto en negrita */
 	transition: color .1s;
 }
+
 
 .navbar-brand > img {
 	max-height: calc(#{$navbar-brand-font-size} * #{$line-height-base});

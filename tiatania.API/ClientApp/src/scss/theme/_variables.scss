@@ -190,9 +190,18 @@ $transition-base: all .1s ease-in-out !default;
 // Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif: 'Lato', sans-serif !default;
-//$font-family-serif: 'Comic Sans MS', serif !default;
 $font-family-serif: 'Phudu', sans-serif !default;
 
+// FreeHand
+
+// Define a variable for the custom font
+$freeHand: 'FreeHand591BT', sans-serif;
+
+// Add the @font-face rule
+@font-face {
+    font-family: 'FreeHand591BT';
+    src: url('../../fonts/FreeHand591BT.ttf') format('truetype');
+}
 
 $font-size-base: 1rem !default; // 16px
 $font-size-xs: .75rem !default; // 12px

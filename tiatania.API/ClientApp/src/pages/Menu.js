@@ -424,9 +424,10 @@ export function Menu() {
 
                     <div>{`TOTAL RD$${totalPrice.toFixed(2)}`}</div>
 
-                    <Tooltip placement="top" isOpen={tooltipOpen} target="tooltip" toggle={toggle} autohide={true}>
-                        Recuerda marcar al 0 para comunicarse con la oficiona.
+                    <Tooltip placement="top" isOpen={tooltipOpen} target="tooltip" toggle={toggle} style={{ background: "#d63384"} }>
+                        Recuerda marcar al 0 para comunicarse con la oficina.
                     </Tooltip>
+
 
                 </div>
 

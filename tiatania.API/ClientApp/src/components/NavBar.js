@@ -100,8 +100,10 @@ export function NavBar() {
             <div className="container">
 
                 {/*<!-- Navbar brand (mobile) -->*/}
-                <Link className="navbar-brand d-lg-none" to="/" > Tia Tania</Link>
-
+                <Link className="navbar-brand d-lg-none" to="/" >
+                    <img src="/assets/img/tiatanialogonavbarresponsive.png" alt="Tia Tania Logo" />
+                </Link>
+                
                 {/*<!-- Navbar toggler -->*/}
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" ref={navbarToggler}  >
                     <span className="navbar-toggler-icon"></span>
@@ -121,8 +123,10 @@ export function NavBar() {
                     </Nav >
 
                     {/*<!-- Navbar brand -->*/}
-                    <Link className="navbar-brand d-none d-lg-flex mx-lg-auto" to="/"> Tia Tania</Link>
-
+                    <Link className="navbar-brand d-none d-lg-flex mx-lg-auto" to="/">
+                        <img src="/assets/img/tiatanialogonavbar.png" alt="Tia Tania Logo" />
+                    </Link>
+                 
                     {/*<!-- Navbar nav -->*/}
                     <Nav navbar>
                         <NavItem>

@@ -1,19 +1,32 @@
-import React, { Component } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { Component, useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import AppRoutes from './AppRoutes';
 import './custom.scss';
 
-export default class App extends Component {
-  static displayName = App.name;
+function ScrollToTop() {
+    const { pathname } = useLocation();
 
-  render() {
-    return (
-        <Routes>
-          {AppRoutes.map((route, index) => {
-            const { element, ...rest } = route;
-            return <Route key={index} {...rest} element={element} />;
-          })}
-        </Routes>
-    );
-  }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+}
+
+export default class App extends Component {
+    static displayName = App.name;
+
+    render() {
+        return (
+            <>
+                <ScrollToTop />
+                <Routes>
+                    {AppRoutes.map((route, index) => {
+                        const { element, ...rest } = route;
+                        return <Route key={index} {...rest} element={element} />;
+                    })}
+                </Routes>
+            </>
+        );
+    }
 }

@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import { Footer } from './Footer';
 import { Header } from './Header';
+import { NavBar } from './NavBar';
 
 export function Layout(props) {
 
@@ -20,6 +21,7 @@ export function Layout(props) {
 
     return (
         <div>
+            <NavBar />
             <Header title={title} />
             {props.children}
             <Footer />

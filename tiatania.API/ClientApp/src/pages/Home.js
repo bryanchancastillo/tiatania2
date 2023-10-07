@@ -2,12 +2,12 @@
 import { jarallax } from 'jarallax';
 import { useEffect } from 'react';
 import { Footer } from "../components/Footer";
-
+import { NavBar } from "../components/NavBar";
 
 export function Home() {
 
     const h1Styles = {
-        fontFamily: 'Comic Neue, san-serif',
+        fontFamily: 'Comic Sans MS, Comic Neue,san-serif',
         // Add more styles as needed
     };
 
@@ -22,6 +22,8 @@ export function Home() {
     return (
         <>
 
+            <NavBar />
+
             <header className="bg-cover" style={{ backgroundImage: "url(assets/img/1.jpg)" }}>
                 <div className="d-flex flex-column min-vh-100 bg-black-50 pt-10 pt-md-8 pb-7 pb-md-0">
                     <div className="container my-auto">
@@ -30,7 +32,7 @@ export function Home() {
                                 <h6 className="text-xs text-white-75">
                                     <span className="text-primary">Motel</span> / ocio
                                 </h6>
-                                <h1 className="display-1 text-white mb-4" style={h1Styles}>
+                                <h1 className="display-2 text-white mb-4" style={h1Styles}>
                                     Tia Tania
                                 </h1>
                                 <Link className="btn btn-outline-primary text-white text-primary-hover mb-7 mb-md-0" to="/menu"> menu</Link>
@@ -71,6 +73,8 @@ export function Home() {
                     </div>
                 </div>
             </header>
+
+    
 
             <Footer />
 

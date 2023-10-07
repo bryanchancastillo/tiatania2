@@ -6,6 +6,7 @@ import { Gallery } from "./pages/Gallery";
 import { Prices } from "./pages/Prices";
 import { Menu } from "./pages/Menu";
 import { PageNotFound } from "./pages/PageNotFound";
+import { Layout } from "./components/Layout";
 
 const AppRoutes = [
   {
@@ -21,24 +22,20 @@ const AppRoutes = [
     element: <FetchData />
   },
   {
-    path: '/',
-    element: <Home />
+      path: '/about',
+      element: <Layout><About /></Layout>
   },
   {
-    path: '/about',
-    element: <About />
+      path: '/prices',
+      element: <Layout><Prices /></Layout>
   },
   {
-    path: '/prices',
-    element: <Prices />
+      path: '/gallery',
+      element: <Layout><Gallery /></Layout>
   },
   {
-    path: '/gallery',
-    element: <Gallery />
-  },
-  {
-    path: '/menu',
-    element: <Menu />
+      path: '/menu',
+      element: <Layout><Menu /></Layout>
   },
   {
     path: '*',

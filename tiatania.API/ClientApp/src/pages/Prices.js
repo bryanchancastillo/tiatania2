@@ -34,20 +34,20 @@ export function Prices() {
                                 <div className="col-9 col-md-3">
                                     <div className="card mb-4 shadow-sm text-center">
                                         <div className="card-header py-3" style={cardHeaderStyle}>
-                                            <h4 className="my-0 fw-normal">2 Horas</h4>
+                                            <h4 className="my-0 fw-normal text-light">2 Horas</h4>
                                         </div>
-                                        <div className="card-body">
-                                            <h1 className="card-title pricing-card-title">RD$<span style={h1Style}>630</span></h1>
+                                        <div className="card-body bg-dark">
+                                            <h1 className="card-title pricing-card-title text-light">RD$<span style={h1Style}>630</span></h1>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-9 col-md-3">
                                     <div className="card mb-4 shadow-sm text-center">
                                         <div className="card-header py-3" style={cardHeaderStyle}>
-                                            <h4 className="my-0 fw-normal">4 Horas</h4>
+                                            <h4 className="my-0 fw-normal text-light">4 Horas</h4>
                                         </div>
-                                        <div className="card-body">
-                                            <h1 className="card-title pricing-card-title">RD$<span style={h1Style}>880</span></h1>
+                                        <div className="card-body bg-dark">
+                                            <h1 className="card-title pricing-card-title text-light">RD$<span style={h1Style}>880</span></h1>
                                         </div>
                                     </div>
                                 </div>

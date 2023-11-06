@@ -60,6 +60,7 @@ export function Home() {
                                         </a>
                                     </li>
                                 </ul>
+
                             </div>
                             <div className="col-md">
                                 <a style={{ textDecoration: 'none' }} href="https://www.google.com/maps/place/Caba%C3%B1as+Tia+Tania/@18.4242891,-69.9920031,15z/data=!4m6!3m5!1s0x8ea56107ec23aeef:0xf1982ccf3e5e2e21!8m2!3d18.4242891!4d-69.9920031!16s%2Fg%2F11c0rnbr8k?entry=ttu">

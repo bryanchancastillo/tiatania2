@@ -23,6 +23,9 @@ export function Footer() {
                             <a className="text-secondary text-primary-hover d-block me-3" href="https://www.facebook.com/cabanastiatania">
                                 <i className="fab fa-facebook"></i>
                             </a>
+                            <a className="text-secondary text-primary-hover d-block me-3" href="https://api.whatsapp.com/send?phone=18498819396">
+                                <i className="fab fa-whatsapp"></i>
+                            </a>
                         </div>
                     </div>
                     <div className="col-sm-4">

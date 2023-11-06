@@ -16,6 +16,7 @@ const liquors = {
     whitelabelmin: { name: "white label miniatura", price: 300, src: "assets/img/whitelabelmin.png" },
     redlabel: { name: "Red Label Cuartillo", price: 1100, src: "assets/img/redlabel.webp" },
     redlabelmin: { name: "red label miniatura", price: 300, src: "assets/img/redlabelmin.png" },
+    fireball: { name: "Fireball miniatura", price: 300, src: "assets/img/fireball.png" },
     agavita: { name: "Tequila Agavita", price: 2000, src: "assets/img/agavita.jpeg" },
     vat69: { name: "Vat 69 media", price: 700, src: "assets/img/vat69.webp" },
     vodcaabsolutmedia: { name: "vodca stolichnaya media", price: 800, src: "assets/img/stoli.png" },

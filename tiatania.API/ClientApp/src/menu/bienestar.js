@@ -10,6 +10,7 @@
     lubricantes: { name: "Lubricantes Cupid", price: 70, src: "assets/img/lubricante.png" },
     rayovac: { name: "Bateria AA / AAA", price: 120, src: "assets/img/rayovac.webp" },
     copas: { name: "Copas", price: 70, src: "assets/img/copas.jpeg" },
+    cables: { name: "Cargadores para telefonos", price: 500, src: "assets/img/cableusb.png" },
 }
 
 
